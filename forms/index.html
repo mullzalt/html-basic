@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Latihan Form</title>
+</head>
+<body style="display: flex;justify-content: center;">
 
+	<form style="padding: 12px;border-style: solid;border-width: 1px;width: 400px;">
+		<div style="display: grid;grid-row-gap: 5px;font-size: 14px;">
+			<label for="username">Username</label>
+			<input type="text" id="username" name="username" required placeholder="masukan username..." />
+		</div>
+
+		<br>
+		
+		<div>
+			<label for="password">Password</label>
+			<input type="password" id="password" name="password" placeholder="masukan password" />
+		</div>
+
+		<p>Jenis kelamin</p>
+
+		<div>
+			<label for="Laki-laki">Laki-laki</label>
+			<input type="radio" id="Laki-laki" name="gender" value="Laki-laki" />
+
+			<label for="perempuan">Perempuan</label>
+			<input type="radio" id="perempuan" name="gender" value="Perempuan" />
+		</div>
+
+		<div>
+			<label for="hobi">Hobi</label>
+			<select id="hobi" name="hobi">
+				<option>Meng bal</option>
+				<option>MoLe</option>
+				<option>Turu</option>
+				<option disabled>Belajar</option>
+			</select>
+		</div>
+
+		<br>
+	
+		<input type="submit" value="Log In" />
+	</form>
+
+
+</body>
+
+</html>
