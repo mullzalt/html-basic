@@ -6,30 +6,36 @@
 </head>
 <body style="display: flex;justify-content: center;">
 
-	<form style="padding: 12px;border-style: solid;border-width: 1px;width: 400px;">
-		<div style="display: grid;grid-row-gap: 5px;font-size: 14px;">
+	<form class="form-group">
+		<div class="form-title">
+			Register
+		</div>
+
+		<div class="form-item">
 			<label for="username">Username</label>
 			<input type="text" id="username" name="username" required placeholder="masukan username..." />
 		</div>
-
-		<br>
 		
-		<div>
+		<div class="form-item">
 			<label for="password">Password</label>
 			<input type="password" id="password" name="password" placeholder="masukan password" />
 		</div>
 
-		<p>Jenis kelamin</p>
+		
 
-		<div>
-			<label for="Laki-laki">Laki-laki</label>
-			<input type="radio" id="Laki-laki" name="gender" value="Laki-laki" />
-
-			<label for="perempuan">Perempuan</label>
-			<input type="radio" id="perempuan" name="gender" value="Perempuan" />
+		<div class="form-item">
+			<div>Jenis kelamin</div>
+			<div>
+				<label for="Laki-laki">Laki-laki</label>
+				<input type="radio" id="Laki-laki" name="gender" value="Laki-laki" />
+			
+				<label for="perempuan">Perempuan</label>
+				<input type="radio" id="perempuan" name="gender" value="Perempuan" />
+			</div>
+			
 		</div>
 
-		<div>
+		<div class="form-item">
 			<label for="hobi">Hobi</label>
 			<select id="hobi" name="hobi">
 				<option>Meng bal</option>
@@ -41,10 +47,55 @@
 
 		<br>
 	
-		<input type="submit" value="Log In" />
+		<input type="submit" value="Sign up" />
 	</form>
 
 
 </body>
+
+
+<!-- mengatur style dalam file html -->
+<style type="text/css">
+html {
+	height: 100%
+}
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: arial;
+	min-height: 100%;
+}	
+
+/*menggunakan classname*/
+.form-group {
+	min-width: 19rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	padding-right: 1rem;
+	padding-left: 1rem;
+	border-style: solid;
+	border-width: 1px;
+	display: flex;
+	flex-direction: column;
+	grid-gap: 0.4rem;
+	border-radius: 0.5rem;
+	height: fit-content;
+}
+
+.form-title{
+	text-align: center;
+	font-weight: bold;
+}
+
+.form-item{
+	display: grid;
+	grid-gap: 0.3rem;
+	font-size: 12px;
+	padding-top: 0.2rem;
+	padding-bottom: 0.2rem;
+}
+</style>
+
 
 </html>
